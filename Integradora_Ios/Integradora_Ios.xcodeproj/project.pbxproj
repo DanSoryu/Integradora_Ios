@@ -11,11 +11,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		040766F12D54244E00A76FF4 /* imagenes */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = imagenes;
-			sourceTree = "<group>";
-		};
 		04F286C72D52D35A00328F6B /* Integradora_Ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Integradora_Ios;
@@ -37,7 +32,6 @@
 		04F286BC2D52D35A00328F6B = {
 			isa = PBXGroup;
 			children = (
-				040766F12D54244E00A76FF4 /* imagenes */,
 				04F286C72D52D35A00328F6B /* Integradora_Ios */,
 				04F286C62D52D35A00328F6B /* Products */,
 			);
@@ -67,7 +61,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				040766F12D54244E00A76FF4 /* imagenes */,
 				04F286C72D52D35A00328F6B /* Integradora_Ios */,
 			);
 			name = Integradora_Ios;
