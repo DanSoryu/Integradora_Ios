@@ -10,22 +10,14 @@
 		04F286C52D52D35A00328F6B /* Integradora_Ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Integradora_Ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		04F286D72D52D35B00328F6B /* Exceptions for "Integradora_Ios" folder in "Integradora_Ios" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 04F286C42D52D35A00328F6B /* Integradora_Ios */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		040766F12D54244E00A76FF4 /* imagenes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = imagenes;
+			sourceTree = "<group>";
+		};
 		04F286C72D52D35A00328F6B /* Integradora_Ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				04F286D72D52D35B00328F6B /* Exceptions for "Integradora_Ios" folder in "Integradora_Ios" target */,
-			);
 			path = Integradora_Ios;
 			sourceTree = "<group>";
 		};
@@ -45,6 +37,7 @@
 		04F286BC2D52D35A00328F6B = {
 			isa = PBXGroup;
 			children = (
+				040766F12D54244E00A76FF4 /* imagenes */,
 				04F286C72D52D35A00328F6B /* Integradora_Ios */,
 				04F286C62D52D35A00328F6B /* Products */,
 			);
@@ -74,6 +67,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				040766F12D54244E00A76FF4 /* imagenes */,
 				04F286C72D52D35A00328F6B /* Integradora_Ios */,
 			);
 			name = Integradora_Ios;
