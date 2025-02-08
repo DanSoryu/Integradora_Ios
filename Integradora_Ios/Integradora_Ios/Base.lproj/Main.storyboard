@@ -22,7 +22,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="dZK-gK-lzQ" kind="presentation" id="qzS-ao-qse"/>
+                                    <segue destination="Wir-eF-dt4" kind="presentation" id="pvw-BO-R6q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,17 +39,17 @@
             <objects>
                 <viewController storyboardIdentifier="ViewControllerFormulario" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dZK-gK-lzQ" customClass="ViewControlerFormulario" customModule="Integradora_Ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gxr-7T-A5s">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="946"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creacion de tu Monitor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbY-u4-4F0">
-                                <rect key="frame" x="0.0" y="0.0" width="440" height="36"/>
+                                <rect key="frame" x="0.0" y="62" width="440" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-4P-xpH">
-                                <rect key="frame" x="0.0" y="36" width="440" height="910"/>
+                                <rect key="frame" x="0.0" y="98" width="440" height="824"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de tu Monitor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-jJ-vg6">
                                         <rect key="frame" x="10" y="30" width="420" height="21"/>
@@ -194,83 +194,42 @@
                             <constraint firstItem="6JM-AU-t41" firstAttribute="bottom" secondItem="NfW-4P-xpH" secondAttribute="bottom" id="zcT-cm-Aq7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fghgf" destination="Hke-pi-vdZ" id="caC-0F-c4a"/>
+                        <outlet property="mkadgnlar" destination="8Fy-KK-45A" id="VD5-yd-wT9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4t-rK-bwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="834" y="-35"/>
         </scene>
-        <!--View Controller-->
+        <!--Registros Dia View Controller-->
         <scene sceneID="wO9-KK-LlM">
             <objects>
-                <viewController id="Wir-eF-dt4" sceneMemberID="viewController">
+                <viewController restorationIdentifier="RegistrosDiaViewController" storyboardIdentifier="RegistrosDiaViewController" id="Wir-eF-dt4" customClass="RegistrosDiaViewController" customModule="Integradora_Ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="szp-f3-Dnq">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_13.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vvv-xh-CHb">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Vmy-WZ-B82"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registros (Movimiento)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGP-bg-Bgv">
-                                <rect key="frame" x="90.666666666666686" y="121.99999999999999" width="259" height="31.333333333333329"/>
+                                <rect key="frame" x="90.666666666666686" y="59.999999999999993" width="259" height="31.666666666666664"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-Xt-uJO">
-                                <rect key="frame" x="10" y="232" width="420" height="90"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baby_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="kql-BI-JO6">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="90"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="119" id="bMx-hQ-cGz"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-H9-87c">
-                                        <rect key="frame" x="129" y="10" width="46.333333333333343" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMQ-Er-lxZ">
-                                        <rect key="frame" x="129" y="36" width="90.666666666666686" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vll-fS-t8j">
-                                        <rect key="frame" x="129" y="62" width="52.666666666666657" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="vll-fS-t8j" firstAttribute="leading" secondItem="kql-BI-JO6" secondAttribute="trailing" constant="10" id="1Pa-9j-Igx"/>
-                                    <constraint firstItem="vhB-H9-87c" firstAttribute="leading" secondItem="kql-BI-JO6" secondAttribute="trailing" constant="10" id="29T-dQ-Jxg"/>
-                                    <constraint firstItem="SMQ-Er-lxZ" firstAttribute="leading" secondItem="kql-BI-JO6" secondAttribute="trailing" constant="10" id="4Pr-ut-xog"/>
-                                    <constraint firstItem="vhB-H9-87c" firstAttribute="top" secondItem="qHe-Xt-uJO" secondAttribute="top" constant="10" id="BkY-Yo-yzh"/>
-                                    <constraint firstItem="SMQ-Er-lxZ" firstAttribute="top" secondItem="vhB-H9-87c" secondAttribute="bottom" constant="5" id="CYm-Zy-XfN"/>
-                                    <constraint firstItem="vll-fS-t8j" firstAttribute="top" secondItem="SMQ-Er-lxZ" secondAttribute="bottom" constant="5" id="Oyi-rO-TKi"/>
-                                    <constraint firstItem="kql-BI-JO6" firstAttribute="top" secondItem="qHe-Xt-uJO" secondAttribute="top" id="QIt-GX-MQs"/>
-                                    <constraint firstAttribute="bottom" secondItem="kql-BI-JO6" secondAttribute="bottom" id="TkD-Ua-qSM"/>
-                                    <constraint firstAttribute="height" constant="90" id="fEh-0i-xtu"/>
-                                    <constraint firstItem="kql-BI-JO6" firstAttribute="leading" secondItem="qHe-Xt-uJO" secondAttribute="leading" id="ufi-oE-jPk"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_13.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Vvv-xh-CHb">
-                                <rect key="frame" x="0.0" y="62" width="440" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Vmy-WZ-B82"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="u42-3K-Tvu"/>
                         <color key="backgroundColor" red="0.61176472900000001" green="0.78431367870000002" blue="0.82745099070000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qHe-Xt-uJO" firstAttribute="leading" secondItem="u42-3K-Tvu" secondAttribute="leading" constant="10" id="6Xg-PA-bR9"/>
-                            <constraint firstItem="qHe-Xt-uJO" firstAttribute="top" secondItem="Vvv-xh-CHb" secondAttribute="bottom" constant="20" id="9jn-LE-w45"/>
                             <constraint firstItem="PGP-bg-Bgv" firstAttribute="top" secondItem="u42-3K-Tvu" secondAttribute="top" constant="60" id="Nd6-63-grT"/>
                             <constraint firstItem="Vvv-xh-CHb" firstAttribute="top" secondItem="u42-3K-Tvu" secondAttribute="top" id="V5W-3P-xZL"/>
-                            <constraint firstItem="u42-3K-Tvu" firstAttribute="trailing" secondItem="qHe-Xt-uJO" secondAttribute="trailing" constant="10" id="chr-Te-krT"/>
                             <constraint firstItem="u42-3K-Tvu" firstAttribute="trailing" secondItem="Vvv-xh-CHb" secondAttribute="trailing" id="eIa-Ky-m2g"/>
                             <constraint firstItem="Vvv-xh-CHb" firstAttribute="leading" secondItem="u42-3K-Tvu" secondAttribute="leading" id="kkk-Jk-oV7"/>
                             <constraint firstItem="PGP-bg-Bgv" firstAttribute="centerX" secondItem="szp-f3-Dnq" secondAttribute="centerX" id="l6x-58-Cba"/>
@@ -283,7 +242,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="baby_normal.png" width="276.75" height="292.5"/>
         <image name="img_13.jpg" width="146.8800048828125" height="97.919998168945312"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
