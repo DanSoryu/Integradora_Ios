@@ -1,30 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--Sensor Por Monitor Controller-->
+        <scene sceneID="73F-xs-SI5">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="8lM-CN-LMA" customClass="SensorPorMonitorController" customModule="Integradora_Ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gu0-aK-bbg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagen_cuna.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-NQ-RLO">
+                                <rect key="frame" x="0.0" y="59" width="393" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Kof-p2-98Y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-Zh-Sr3">
+                                <rect key="frame" x="118" y="99" width="157" height="70"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="tableCellBlueTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q2-6Z-gjn">
+                                <rect key="frame" x="142" y="114" width="109.33333333333331" height="41"/>
+                                <string key="text">Monitoreo del 
+Bebe</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m8B-05-Gg7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6q2-6Z-gjn" firstAttribute="height" secondItem="gu0-aK-bbg" secondAttribute="height" multiplier="0.0481221" id="5eM-EB-KmB"/>
+                            <constraint firstItem="ZkZ-Zh-Sr3" firstAttribute="centerX" secondItem="gu0-aK-bbg" secondAttribute="centerX" id="Hq8-sM-J3M"/>
+                            <constraint firstItem="6q2-6Z-gjn" firstAttribute="centerX" secondItem="gu0-aK-bbg" secondAttribute="centerX" id="IJ1-8Q-n9A"/>
+                            <constraint firstItem="m8B-05-Gg7" firstAttribute="trailing" secondItem="NrS-NQ-RLO" secondAttribute="trailing" id="K16-2l-uqJ"/>
+                            <constraint firstItem="ZkZ-Zh-Sr3" firstAttribute="top" secondItem="m8B-05-Gg7" secondAttribute="top" constant="40" id="Uuu-IK-jFj"/>
+                            <constraint firstItem="6q2-6Z-gjn" firstAttribute="top" secondItem="m8B-05-Gg7" secondAttribute="top" constant="55" id="bgS-a8-mzk"/>
+                            <constraint firstItem="NrS-NQ-RLO" firstAttribute="leading" secondItem="m8B-05-Gg7" secondAttribute="leading" id="bzb-O8-DBy"/>
+                            <constraint firstItem="ZkZ-Zh-Sr3" firstAttribute="height" secondItem="gu0-aK-bbg" secondAttribute="height" multiplier="0.0821596" id="gMX-dL-url"/>
+                            <constraint firstItem="NrS-NQ-RLO" firstAttribute="top" secondItem="m8B-05-Gg7" secondAttribute="top" id="kBD-bl-xKj"/>
+                            <constraint firstItem="ZkZ-Zh-Sr3" firstAttribute="width" secondItem="gu0-aK-bbg" secondAttribute="width" multiplier="0.399491" id="kWL-hD-RSp"/>
+                            <constraint firstItem="6q2-6Z-gjn" firstAttribute="width" secondItem="gu0-aK-bbg" secondAttribute="width" multiplier="0.278202" id="sp7-En-L1M"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ButtonTitulo" destination="ZkZ-Zh-Sr3" id="LIs-SP-Unv"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIo-NL-igB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2778" y="53"/>
         </scene>
     </scenes>
     <resources>
+        <image name="imagen_cuna.jpeg" width="600" height="600"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellBlueTextColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
