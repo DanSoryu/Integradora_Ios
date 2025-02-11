@@ -15,16 +15,15 @@ class SensorPorMonitorController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        
         
         //REDONDEAR BOTON
-        ButtonTitulo.layer.cornerRadius = ButtonTitulo.frame.size.height/2
+        ButtonTitulo.layer.cornerRadius = 8
         ButtonTitulo.layer.borderWidth = 2
-        ButtonTitulo.layer.borderColor = UIColor.white.cgColor
+        ButtonTitulo.layer.borderColor = UIColor.clear.cgColor
         ButtonTitulo.layer.masksToBounds = true
+        
+        
+        //UITABLEVIEW SOLO DISEÑO
     }
     
 
