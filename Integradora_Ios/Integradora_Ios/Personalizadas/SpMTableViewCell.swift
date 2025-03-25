@@ -9,8 +9,11 @@ import UIKit
 
 class SpMTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var cellView: UIView!
     @IBOutlet weak var ImagenSensor: UIImageView!
+    
     @IBOutlet weak var UltimoDato: UILabel!
+    
     @IBOutlet weak var Sensor: UILabel!
     
     override func awakeFromNib() {

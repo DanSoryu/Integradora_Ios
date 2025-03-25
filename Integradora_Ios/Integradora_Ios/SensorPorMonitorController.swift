@@ -21,11 +21,11 @@ class SensorPorMonitorController: UIViewController, UITableViewDataSource ,UITab
     
     //arreglo de objetos
     let data:[Sensor] = [
-        Sensor(Sensor:"Temperatura ambiente",UltimoDato: "22 C",ImagenSensor:"img_2"),
-        Sensor(Sensor:"Calidad del Aire",UltimoDato: "Buena",ImagenSensor:"baby_triste"),
-        Sensor(Sensor:"Nivel de Luz",UltimoDato: "Moderado",ImagenSensor:"img_4"),
-        Sensor(Sensor:"Estado del Bebè",UltimoDato: "Durmiendo",ImagenSensor:"img_3"),
-        Sensor(Sensor:"Movimiento del Bebè",UltimoDato: "Sin Movimiento",ImagenSensor:"img_5")
+        Sensor(Sensor:"Temperatura ambiente",UltimoDato: "22 C",ImagenSensor:"bebecito2"),
+        Sensor(Sensor:"Calidad del Aire",UltimoDato: "Buena",ImagenSensor:"bebecito1"),
+        Sensor(Sensor:"Nivel de Luz",UltimoDato: "Moderado",ImagenSensor:"bebecito4"),
+        Sensor(Sensor:"Estado del Bebè",UltimoDato: "Durmiendo",ImagenSensor:"bebecito3"),
+        Sensor(Sensor:"Movimiento del Bebè",UltimoDato: "Sin Movimiento",ImagenSensor:"bebecito5")
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,10 @@ class SensorPorMonitorController: UIViewController, UITableViewDataSource ,UITab
         //UITABLE VIEW
         Tabla.dataSource = self
         Tabla.delegate = self
+        
+        //look good
+        Tabla.separatorStyle = .none
+        Tabla.tableFooterView = UIView()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,12 +56,24 @@ class SensorPorMonitorController: UIViewController, UITableViewDataSource ,UITab
         cell.Sensor.text = sensor.Sensor
         cell.UltimoDato.text = sensor.UltimoDato
         cell.ImagenSensor.image = UIImage(named: sensor.ImagenSensor)
+        
+        
+        cell.contentView.layer.cornerRadius = 35
+        cell.contentView.layer.masksToBounds = true
+        cell.contentView.layer.borderWidth = 2
+        cell.contentView.layer.borderColor = UIColor.systemPink.cgColor
+
+        // Agregar margen a la celda con contentInsets
+        cell.contentView.layoutMargins = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
+        return 120
     }
+    
+    
     
     
 

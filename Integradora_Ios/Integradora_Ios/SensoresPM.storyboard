@@ -53,45 +53,53 @@ Bebe</string>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Rf-7D-WfM">
                                 <rect key="frame" x="0.0" y="209" width="393" height="609"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="140" id="bWf-k4-mj4" customClass="SpMTableViewCell" customModule="Integradora_Ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="120" id="bWf-k4-mj4" customClass="SpMTableViewCell" customModule="Integradora_Ios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bWf-k4-mj4" id="Gu7-lu-KUz">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOr-OY-yWK">
-                                                    <rect key="frame" x="10" y="6" width="130" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WOr-OY-yWK">
+                                                    <rect key="frame" x="30" y="21" width="80" height="80"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="130" id="OB5-in-bYj"/>
-                                                        <constraint firstAttribute="height" constant="128" id="psR-qg-13u"/>
+                                                        <constraint firstAttribute="width" secondItem="WOr-OY-yWK" secondAttribute="height" multiplier="1:1" id="GMG-9d-gyo"/>
+                                                        <constraint firstAttribute="width" constant="80" id="It1-5X-9Ly"/>
+                                                        <constraint firstAttribute="height" constant="80" id="klT-lm-6aK"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeD-hP-UjQ">
-                                                    <rect key="frame" x="201" y="29" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDX-Jl-nt3">
+                                                    <rect key="frame" x="130" y="21" width="196.66666666666663" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3b-vm-kvF">
-                                                    <rect key="frame" x="201" y="84" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSg-We-pBK">
+                                                    <rect key="frame" x="130" y="62" width="196.66666666666663" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.99607843139999996" green="0.82352941180000006" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="WOr-OY-yWK" firstAttribute="leading" secondItem="Gu7-lu-KUz" secondAttribute="leading" id="clC-hI-nDN"/>
-                                                <constraint firstItem="WOr-OY-yWK" firstAttribute="leading" secondItem="Gu7-lu-KUz" secondAttribute="leading" constant="10" id="xh3-5u-wBV"/>
+                                                <constraint firstItem="WOr-OY-yWK" firstAttribute="leading" secondItem="Gu7-lu-KUz" secondAttribute="leadingMargin" constant="10" id="236-Hg-wSb"/>
+                                                <constraint firstItem="VDX-Jl-nt3" firstAttribute="top" secondItem="Gu7-lu-KUz" secondAttribute="topMargin" constant="10" id="7ZV-Vc-VI9"/>
+                                                <constraint firstItem="VDX-Jl-nt3" firstAttribute="width" secondItem="Gu7-lu-KUz" secondAttribute="width" multiplier="0.5" id="IBq-4s-omN"/>
+                                                <constraint firstItem="VDX-Jl-nt3" firstAttribute="leading" secondItem="WOr-OY-yWK" secondAttribute="trailing" constant="20" id="Vn2-o6-Q0s"/>
+                                                <constraint firstItem="JSg-We-pBK" firstAttribute="leading" secondItem="WOr-OY-yWK" secondAttribute="trailing" constant="20" id="me4-zj-Iwl"/>
+                                                <constraint firstItem="WOr-OY-yWK" firstAttribute="top" secondItem="Gu7-lu-KUz" secondAttribute="topMargin" constant="10" id="ogy-Xf-fs9"/>
+                                                <constraint firstItem="JSg-We-pBK" firstAttribute="width" secondItem="VDX-Jl-nt3" secondAttribute="width" id="xO8-Di-vSC"/>
+                                                <constraint firstItem="JSg-We-pBK" firstAttribute="top" secondItem="VDX-Jl-nt3" secondAttribute="bottom" constant="20" id="zOs-c4-4sz"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="ImagenSensor" destination="WOr-OY-yWK" id="1oh-Ak-BcC"/>
-                                            <outlet property="Sensor" destination="eeD-hP-UjQ" id="Bsk-Zz-a1T"/>
-                                            <outlet property="UltimoDato" destination="f3b-vm-kvF" id="bYf-gh-Wbq"/>
+                                            <outlet property="Sensor" destination="VDX-Jl-nt3" id="lYr-4F-VxH"/>
+                                            <outlet property="UltimoDato" destination="JSg-We-pBK" id="qAN-cL-Lfa"/>
+                                            <outlet property="cellView" destination="Gu7-lu-KUz" id="dId-3E-lk1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
