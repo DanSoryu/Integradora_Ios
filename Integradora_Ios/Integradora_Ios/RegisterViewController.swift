@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let borderColor = UIColor(red: 142/255, green: 181/255, blue: 239/255, alpha: 1).cgColor
         let cornerRadius: CGFloat = 10
 
@@ -38,15 +39,44 @@ class RegisterViewController: UIViewController {
         RegisterView.clipsToBounds = true
     }
     
+    //REGISTER HARCODEADO
 
-    /*
-    // MARK: - Navigation
+    @IBAction func register() {
+        
+            let conexion = URLSession(configuration: .default)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+            var request = URLRequest(url:URL(string:"http://192.168.252.122:8000/api/auth/register")!)
+
+            request.httpMethod = "POST"
+
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+            let nombre = txfNombre.text!
+            let email = txfEmail.text!
+            let password = txfPassword.text!
+        
+            
+            
+            let json = ["name":nombre, "email":email, "password":password]
+            //print(json)
+            let jsonData = try? JSONSerialization.data(withJSONObject: json)
+            //print(jsonData)
+
+            request.httpBody = jsonData
+                    
+        conexion.dataTask(with: request) { datos, respuesta, error in
+            
+            
+                
+                print("ETSITO")
+                DispatchQueue.main.async{
+                self.performSegue(withIdentifier: "sgRL", sender: nil)
+                }
+                
+            
+                
+            }.resume()
+            
     }
-    */
-
+    
 }

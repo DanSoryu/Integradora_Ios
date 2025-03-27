@@ -17,8 +17,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var LoginView: UIView!
     
+    let token = Singleton.shared()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        Singleton.shared().abrirArchivo()
         
         let borderColor = UIColor(red: 142/255, green: 181/255, blue: 239/255, alpha: 1).cgColor
         let cornerRadius: CGFloat = 10
@@ -37,15 +40,50 @@ class LoginViewController: UIViewController {
 
     }
     
+    
+    @IBAction func login()
+    {
+        let conexion = URLSession(configuration: .default)
 
-    /*
-    // MARK: - Navigation
+        var request = URLRequest(url:URL(string:"http://192.168.252.122:8000/api/auth/login")!)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        request.httpMethod = "POST"
+
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+    
+        let email = txfEmail.text!
+        let password = txfPassword.text!
+    
+        
+        
+        let json = ["email":email, "password":password]
+        //print(json)
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        print(jsonData!)
+
+        request.httpBody = jsonData
+                
+        conexion.dataTask(with: request) { datos, respuesta, error in
+            
+        //parsear la informacion
+            do
+            {
+                
+                let jsonResponse = try JSONSerialization.jsonObject(with: datos!, options: []) as! [String:Any]
+                let token = jsonResponse["token"] as! String
+                print(token)
+                self.token.token = token
+                self.token.guardarArchivo()
+                
+                DispatchQueue.main.async{
+                    self.performSegue(withIdentifier: "sgLM", sender: nil)
+                }
+            }
+            catch
+            {
+                print("algo salio mal")
+            }
+             
+        }.resume()
     }
-    */
-
 }
