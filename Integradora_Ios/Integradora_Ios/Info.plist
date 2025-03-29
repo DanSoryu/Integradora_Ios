@@ -16,7 +16,11 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
+<<<<<<< HEAD
 					<string>SensoresPM</string>
+=======
+					<string>Register</string>
+>>>>>>> main
 				</dict>
 			</array>
 		</dict>
